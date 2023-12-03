@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>webrtc photo demo</title>
+        <link rel="stylesheet" href="./css/style.css?v1" />
+        <script src="./js/index.js?v1"></script>
+    </head>
+
+    <body>
+        <div class="wrapper-1 hide">
+            <button id="openMedia">WebRTC拍照</button>
+        </div>
+        <div class="wrapper-2 hide">
+            <video id="localVideo"></video>
+            <button id="exitVideo">exit video></button>
+            <button id="playVideo">play video</button>
+            <div class="action-group">
+                <button id="showPic"></button>
+                <button id="takePhoto"></button>
+                <button id="switchCamera"></button>
+            </div>
+        </div>
+        <div class="wrapper-3 hide">
+            <canvas id="canvas" class="hide"></canvas>
+            <img id="photo" src="" />
+        </div>
+    </body>
 </html>
